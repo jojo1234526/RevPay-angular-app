@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RevPay-angular-app';
+
+  navItems = [
+    { name: 'Users', path: 'users' },
+    { name: 'Transactions', path: 'transactions' },
+    // more navigation items here...
+  ];
 }

@@ -1,1 +1,22 @@
-<p>transaction works!</p>
+<h2>Transactions</h2>
+<div *ngIf="transactions && transactions.length">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sender</th>
+        <th>Receiver</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{transaction.id}}</td>
+        <td>{{transaction.sender}}</td> <!-- or {{transaction.sender.username}} -->
+        <td>{{transaction.receiver}}</td> <!-- or {{transaction.receiver.username}} -->
+        <td>{{transaction.amount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

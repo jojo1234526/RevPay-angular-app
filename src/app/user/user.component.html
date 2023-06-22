@@ -1,43 +1,23 @@
-<div *ngIf="users.length">
-    <h2>All Users</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-                <th>Balance</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let user of users">
-                <td>{{user.id}}</td>
-                <td>{{user.username}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.phoneNumber}}</td>
-                <td>{{user.balance}}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div>
-    <h2>Register User</h2>
-    <!-- Form to register user. Be sure to implement form handling in the component -->
-</div>
-
-<div>
-    <h2>Login</h2>
-    <!-- Form to login. Be sure to implement form handling in the component -->
-</div>
-
-<div>
-    <h2>Send Money</h2>
-    <!-- Form to send money. Be sure to implement form handling in the component -->
-</div>
-
-<div>
-    <h2>Request Money</h2>
-    <!-- Form to request money. Be sure to implement form handling in the component -->
+<h2>Users</h2>
+<div *ngIf="users && users.length">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phoneNumber}}</td>
+        <td>{{user.balance}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

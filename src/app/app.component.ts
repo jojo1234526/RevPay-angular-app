@@ -11,6 +11,10 @@ export class AppComponent {
   navItems = [
     { name: 'Users', path: 'users' },
     { name: 'Transactions', path: 'transactions' },
-    // more navigation items here...
+    { name: 'Register', path: 'register' }, // new
+    { name: 'Login', path: 'login' }, // new
+    { name: 'Send Money', path: 'send-money' }, // new
+    { name: 'Request Money', path: 'request-money' } // new
   ];
+  
 }

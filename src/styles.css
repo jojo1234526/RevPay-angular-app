@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/* Add a little padding to the body for some breathing room */
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add some styling to buttons */
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

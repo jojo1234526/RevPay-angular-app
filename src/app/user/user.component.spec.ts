@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { UserComponent } from './user.component';
+import { UserService } from '../user.service';  // assuming this is the correct path
 
 describe('UserComponent', () => {
   let component: UserComponent;
@@ -8,7 +10,9 @@ describe('UserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserComponent ]
+      imports: [HttpClientTestingModule],  // include this module
+      declarations: [ UserComponent ],
+      providers: [UserService]  // include this service
     })
     .compileComponents();
 
